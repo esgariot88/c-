@@ -1,0 +1,17 @@
+//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+Random rnd = new Random();
+
+ int number = rnd.Next();
+
+if(number>99)
+{
+    Console.WriteLine(number.ToString()[2]);
+}
+
+else
+{
+    Console.WriteLine("Третьей цифры нет");
+}
+
+Console.WriteLine(number);
