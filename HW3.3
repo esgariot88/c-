@@ -1,0 +1,19 @@
+int number = ReadInt("Введите число N: ");
+int i = 1;
+
+while(i <= number)
+{
+Console.Write(Cube(i) + " ");
+i++;
+}
+
+int Cube(int a)
+{
+return a * a * a;
+}
+
+int ReadInt(string message)
+{
+Console.Write(message);
+return Convert.ToInt32(Console.ReadLine());
+}
