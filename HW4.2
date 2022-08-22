@@ -1,20 +1,13 @@
-void PrintArray (int[] Array)
-{
-for(int i = 0; i < Array.Length; i++)
-{
-Console.Write(Array[i] + " ");
-}
-}
+int number = ReadInt("Введите число : ");
+int sum = 0; 
 
-int size =  ReadInt("Введите число : ");;
-int[] array = new int[size];
-
-for(int i = 0; i < array.Length; i++)
+for (int i = 0; i <= number; i++)
 {
-array[i] = new Random().Next();
-}
+sum=sum + number%10;
+number = number /10;
 
-PrintArray(array);
+}
+Console.WriteLine(sum);
 
 int ReadInt(string message)
 {
