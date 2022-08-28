@@ -1,0 +1,24 @@
+int size =  5;
+int[] array = new int[size];
+PrintArray(array);
+
+
+double sum=0;
+for(int i = 0; i < array.Length; i++)
+{
+if (i%2!=0)
+{
+    sum+=array[i];
+    
+}
+    Console.WriteLine(array[i]+ $"Сумма элементов стоящих на нечётных позициях {sum}" );
+    
+}
+
+void PrintArray(int[] array)
+{
+for (int i = 0; i < array.Length; i++)
+{
+array[i] = new Random().Next(0,5);
+}
+}
